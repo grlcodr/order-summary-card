@@ -4,19 +4,125 @@
     --bright-blue: hsl(245, 75%, 52%);
     --dark-blue: hsl(223, 47%, 23%);
     --paragraph-font: 16px;
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desat-blue: hsl(224, 23%, 55%);
 }
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 :root {
     --body-font: 'Red Hat Display', sans-serif;
 }
-/* mobile */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-}
 
 /* laptop/desktop */
-@media only screen and (min-width : 1440px) {
 
+
+/* mobile */
+@media only screen and (min-width: 375px) and (max-width: 475px) {
+
+    body {
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: var(--pale-blue);
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 55px 30px;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 620px;
+    }
+
+    .hero img {
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .plan-details {
+        display: flex;
+    }
+
+    .cta-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        width: 100%;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+
+    h2 {
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+        font-family: var(--body-font);
+        font-weight: 700;
+    }
+
+    .text p {
+        font-family: var(--body-font);
+        font-size: 16px;
+        padding: 10px 20px;
+        text-align: center;
+        color: var(--desat-blue)
+    }
+
+    .plan-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 85%;
+        background-color: var(--very-pale-blue);
+        border-radius: 10px;
+    }
+
+    .plan-details figure {
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .plan-text p {
+        margin: 0px;
+        font-family: var(--body-font);
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+     .payment-btn {
+         padding: 12px;
+         border: none;
+         border-radius: 10px;
+         background-color: var(--bright-blue);
+         color: white;
+         font-family: var(--body-font);
+         font-weight: 700;
+         font-size: 15px;
+         box-shadow: 0 4px 10px 0 var(--pale-blue), 0 6px 30px 0 var(--pale-blue);
+     }
+
+     .cancel-btn {
+         border: none;
+         background-color: white;
+         font-family: var(--body-font);
+         font-size: 14px;
+         font-weight: 700;
+         color: var(--desat-blue)
+     }
+
+     a {
+         font-family: var(--body-font);
+         font-size: 14px;
+         color: var(--bright-blue);
+         font-weight: 700;
+         padding-left: 10px;
+     }
+}
+
+@media only screen and (mix-width: 1440px) {
+    .hero img {
+        max-width: 100%;
+    }
 }
