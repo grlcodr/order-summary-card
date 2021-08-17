@@ -38,8 +38,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Bootstrap(https://getbootstrap.com) - styled components
+- [Bootstrap](https://getbootstrap.com) - styled components
 
 ## Author
 
-- Twitter - [@yourusername](https://www.twitter.com/grlcodr)
+- Twitter - [@grlcodr](https://www.twitter.com/grlcodr)
